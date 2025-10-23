@@ -1,5 +1,5 @@
 
-class Solution {
+class Solution345 {
     public String reverseVowels(String s) {
         char[] ar = s.toCharArray();
         int k1 = 0, k2 = s.length() - 1;
@@ -7,11 +7,11 @@ class Solution {
         while (k1 < k2) {
             if (!isVowel(ar[k1])) {
                 k1++;
-                continue; 
+                continue;
             }
             if (!isVowel(ar[k2])) {
                 k2--;
-                continue;   
+                continue;
             }
             char temp = ar[k1];
             ar[k1] = ar[k2];
@@ -29,7 +29,7 @@ class Solution {
     }
 
     public static void main(String[] args) {
-        Solution ob = new Solution();
-        System.out.println(ob.reverseVowels("IcecreAm")); 
+        Solution345 ob = new Solution345();
+        System.out.println(ob.reverseVowels("IcecreAm"));
     }
 };
